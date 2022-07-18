@@ -544,6 +544,30 @@ ul {
   font-size: 40px;
   letter-spacing: -2px;
   margin: 0;
+  width: 357px;
+  border-right: 2px solid #777;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: control-width 3s steps(20) 1s both, blink 0.5s infinite;
+  -webkit-animation: control-width 3s steps(20) 1s both, blink 0.5s infinite;
+}
+
+@keyframes control-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 357px;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: #777;
+  }
+  to {
+    border-color: transparent;
+  }
 }
 
 .landing .text p {
